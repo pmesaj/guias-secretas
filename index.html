@@ -137,7 +137,7 @@
 
     /* PRODUCTOS */
     .productos {
-      padding: 80px 0;
+      padding: 20px 0 80px;
     }
 
     .productos-header {
@@ -172,7 +172,8 @@
     .producto-card {
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 32px;
+      padding: 0 32px 32px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -190,9 +191,10 @@
     }
 
     .producto-img {
-      width: 100%;
+      width: calc(100% + 64px);
+      margin-left: -32px;
       height: 280px;
-      border-radius: 8px;
+      border-radius: 0;
       object-fit: contain;
       display: block;
     }
@@ -381,6 +383,10 @@
 
     /* RESPONSIVE */
     @media (max-width: 640px) {
+      .hero {
+        padding: 36px 24px 32px;
+      }
+
       .productos-grid {
         grid-template-columns: 1fr;
       }
@@ -423,7 +429,7 @@
   <!-- HERO -->
   <section class="hero">
     <h1>Viaja con quien <em>conoce el terreno</em></h1>
-    <p>Guías de viaje escritas desde la experiencia. Sin relleno. Lo que necesitas para hacer el
+    <p>Guías de viaje escritas desde la experiencia. <br />Lo que necesitas para hacer el
       viaje bien hecho.</p>
   </section>
 
@@ -434,7 +440,8 @@
 
         <!-- DANUBIO -->
         <div class="producto-card">
-          <img src="https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69dcc7c8026a7c4ab2447e25.png" alt="Guía Secreta Danubio en bicicleta" class="producto-img">
+          <img src="https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69dcc7c8026a7c4ab2447e25.png"
+            alt="Guía Secreta Danubio en bicicleta" class="producto-img">
           <span class="producto-tag">Guía de viaje</span>
           <h3>Danubio en bicicleta: de Passau a Viena</h3>
           <p>280 km, 6 etapas, 8 días. La ruta cicloturista más popular de Europa bien explicada: las márgenes
@@ -452,7 +459,8 @@
 
         <!-- DOLOMITAS -->
         <div class="producto-card">
-          <img src="https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/6880cd241933f6183abc325f.png" alt="Guía Secreta Dolomitas" class="producto-img">
+          <img src="https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/6880cd241933f6183abc325f.png"
+            alt="Guía Secreta Dolomitas" class="producto-img">
           <span class="producto-tag">Guía de viaje</span>
           <h3>Dolomitas: la guía que no encontrarás en ninguna librería</h3>
           <p>El destino más espectacular de los Alpes explicado por alguien que lo conoce a fondo. Rutas, refugios,
